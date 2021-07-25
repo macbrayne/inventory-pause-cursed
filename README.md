@@ -18,8 +18,8 @@
     <tr>
         <td>Fabric Cursed Legacy</td>
         <td><a href="https://github.com/macbrayne/inventory-pause-cursed">GitHub</a></td>
-        <td><a href="https://modrinth.com/mod/inventory-pause-cursed">Modrinth (coming soon)</a></td>
-        <td><a href="https://www.curseforge.com/minecraft/mc-mods/inventory-pause-cursed">CurseForge (coming soon)</a></td>
+        <td><a href="https://modrinth.com/mod/inventory-pause-cursed">Modrinth</a></td>
+        <td><p>CurseForge (not supported)</p></td>
     </tr>
 </table>
 

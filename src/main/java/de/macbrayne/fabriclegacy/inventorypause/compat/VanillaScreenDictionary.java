@@ -1,7 +1,7 @@
 package de.macbrayne.fabriclegacy.inventorypause.compat;
 
+import net.minecraft.client.gui.Screen;
 import net.minecraft.client.gui.screen.container.*;
-import net.minecraft.container.ChestContainer;
 
 import javax.annotation.Nonnull;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import java.util.function.BooleanSupplier;
 
 public class VanillaScreenDictionary {
     private final Class<?>[] vanillaClasses;
-    private final Map<Class<? extends ContainerScreen>, BooleanSupplier> configProviderMap = new HashMap<>(14);
+    private final Map<Class<?>, BooleanSupplier> configProviderMap = new HashMap<>(14);
 
     public VanillaScreenDictionary() {
         // Abilities Screen top layer

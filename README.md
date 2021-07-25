@@ -1,28 +1,35 @@
-# Minecraft Cursed Legacy Example Mod
+# Inventory Pause
+<a href="https://github.com/macbrayne/inventory-pause-cursed/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/macbrayne/inventory-pause-forge?style=flat&color=0C8E8E" alt="License"></a>
+---
+## Pause your single player game when you open your inventory.
+<table>
+    <tr>
+        <td>Forge</td>
+        <td><a href="https://github.com/macbrayne/inventory-pause-forge/">GitHub</a></td>
+        <td><a href="https://modrinth.com/mod/inventory-pause-forge">Modrinth</a></td>
+        <td><a href="https://www.curseforge.com/minecraft/mc-mods/inventory-pause-forge">CurseForge</a></td>
+    </tr>
+    <tr>
+        <td>Fabric (by umollu)</td>
+        <td><a href="https://github.com/umollu/inventory-pause/">GitHub</a></td>
+        <td><a href="https://modrinth.com/mod/inventory-pause">Modrinth</a></td>
+        <td><a href="https://www.curseforge.com/minecraft/mc-mods/inventory-pause">CurseForge</a></td>
+    </tr>
+    <tr>
+        <td>Fabric Cursed Legacy</td>
+        <td><a href="https://github.com/macbrayne/inventory-pause-cursed">GitHub</a></td>
+        <td><a href="https://modrinth.com/mod/inventory-pause-cursed">Modrinth (coming soon)</a></td>
+        <td><a href="https://www.curseforge.com/minecraft/mc-mods/inventory-pause-cursed">CurseForge (coming soon)</a></td>
+    </tr>
+</table>
 
-The (unofficial) [Fabric](https://fabricmc.net/) home for 1.2.5 and Beta 1.7.3 - if you want the newer versions see [here](https://github.com/FabricMC/fabric-example-mod).
+![](https://media.giphy.com/media/mCJQCNkacCMGpUDj3h/giphy.gif)
 
-## Setup
-1. Edit build.gradle and mod.json to suit your needs.
-    * The "mixins" object can be removed from mod.json if you do not need to use mixins.
-    * Please remember to replace all occurrences of "modid" with your own mod ID.
-2. Run the following command, replacing "eclipse" with the command your specific ide if you are not using eclipse:
+This is an ongoing port of [umollu's inventory-pause mod](https://modrinth.com/mod/inventory-pause) to fabric-cursed-legacy.
+It supports pausing on opening the inventory, opening furnaces, crafting tables and other vanilla screens.
 
-```
-./gradlew eclipse
-```
+This mod is __client-side only__ and won't be active in LAN worlds or on servers.
 
-NOTE: if you want sources (recommended), instead run
+## [Releases](https://github.com/macbrayne/inventory-pause-cursed/releases)
 
-```
-./gradlew rebuildLVT genSources eclipse
-```
-
-Once your mod is complete and ready for use it can be compiled and reobfuscated with:
-
-```
-./gradlew build
-```
-
-## License
-This template is available under the MIT license. Feel free to learn from it and incorporate it in your own projects.
+The mod is licensed under the [MIT License](LICENSE.md)

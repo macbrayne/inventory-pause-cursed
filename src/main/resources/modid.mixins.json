@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "io.github.minecraftcursedlegacy.example.mixin",
+  "package": "de.macbrayne.fabriclegacy.inventorypause.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "ContainerScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

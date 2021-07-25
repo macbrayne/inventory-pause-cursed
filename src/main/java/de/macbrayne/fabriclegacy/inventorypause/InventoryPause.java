@@ -1,4 +1,4 @@
-package io.github.minecraftcursedlegacy.example;
+package de.macbrayne.fabriclegacy.inventorypause;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import net.fabricmc.api.ModInitializer;
 import tk.valoeghese.zoesteriaconfig.api.container.WritableConfig;
 import tk.valoeghese.zoesteriaconfig.api.template.ConfigTemplate;
 
-public class ExampleMod implements ModInitializer {
+public class InventoryPause implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -19,7 +19,7 @@ public class ExampleMod implements ModInitializer {
 
 		// example config
 		try {
-			config = Configs.loadOrCreate(new Id("modid", "example"),
+			config = Configs.loadOrCreate(new Id("modid", "inventorypause"),
 					ConfigTemplate.builder()
 					.addContainer("exampleContainer", container -> container.addDataEntry("someData", "0.5"))
 					.build());

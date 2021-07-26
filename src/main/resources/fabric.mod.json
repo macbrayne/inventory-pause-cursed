@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "inventorypause",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Inventory Pause",
+  "description": "Pause your single player game when you open your inventory.",
   "authors": [
-    "Me!"
+    "macbrayne, umollu"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "issues": "https://github.com/macbrayne/inventory-pause-cursed/issues",
+    "sources": "https://github.com/macbrayne/inventory-pause-cursed/"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/inventorypause/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "de.macbrayne.fabriclegacy.inventorypause.InventoryPause"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "inventorypause.mixins.json"
   ],
 
   "depends": {

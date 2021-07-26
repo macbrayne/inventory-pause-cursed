@@ -47,11 +47,9 @@ public class ModConfig /*implements ConfigData*/ {
         public boolean pauseShulkerBox = false;
         public boolean pauseChest = false;
         // @ConfigEntry.Gui.CollapsibleObject
-        public
-        WorldGUIs worldGUIs = new WorldGUIs();
+        public WorldGUIs worldGUIs = new WorldGUIs();
         // @ConfigEntry.Gui.CollapsibleObject
-        public
-        AdditionalGUIs additionalGUIs = new AdditionalGUIs();
+        public AdditionalGUIs additionalGUIs = new AdditionalGUIs();
     }
 
     public static class ModCompat {

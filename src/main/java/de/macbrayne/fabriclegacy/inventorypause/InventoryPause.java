@@ -1,6 +1,8 @@
 package de.macbrayne.fabriclegacy.inventorypause;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 import io.github.minecraftcursedlegacy.api.config.Configs;
 import io.github.minecraftcursedlegacy.api.registry.Id;
@@ -15,20 +17,28 @@ public class InventoryPause implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		System.out.println("Hello Fabric world!");
-
-		// example config
 		try {
-			config = Configs.loadOrCreate(new Id("modid", "inventorypause"),
+			config = Configs.loadOrCreate(new Id("inventorypause", "inventorypause"),
 					ConfigTemplate.builder()
-					.addContainer("exampleContainer", container -> container.addDataEntry("someData", "0.5"))
-					.build());
+							.addDataEntry("enabled", true)
+							.addContainer("abilities", container -> container.addDataEntry("craftingScreen", true)
+									.addDataEntry("dispenserScreen", true)
+									.addDataEntry("doubleChestScreen", true)
+									.addDataEntry("furnaceScreen", false)
+									.addDataEntry("playerInventoryScreen", true))
+							.build());
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
-
-		System.out.println(config.getDoubleValue("exampleContainer.someData"));
 	}
 
 	private static WritableConfig config;
+
+	public static WritableConfig getConfig() {
+		return config;
+	}
+
+	public static boolean isModEnabled() {
+		return config.getBooleanValue("enabled");
+	}
 }

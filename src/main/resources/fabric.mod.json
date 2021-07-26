@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "inventorypause",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Inventory Pause",
+  "description": "Pause your single player game when you open your inventory.",
   "authors": [
-    "Me!"
+    "macbrayne, umollu"
   ],
   "contact": {
     "issues": "https://github.com/minecraft-cursed-legacy/Example-Mod/issues",
     "sources": "https://github.com/minecraft-cursed-legacy/Example-Mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/inventorypause/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -23,7 +23,7 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "inventorypause.mixins.json"
   ],
 
   "depends": {

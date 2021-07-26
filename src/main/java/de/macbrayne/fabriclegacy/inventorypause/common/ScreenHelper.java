@@ -8,16 +8,15 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 public class ScreenHelper {
-    private static final ModConfig config = new ModConfig();
     private static final VanillaScreenDictionary vanillaDictionary = Reference.getVanillaScreenDictionary();
 
     public static boolean isConfiguredScreen(@Nullable Screen screen) {
-        return screen != null && config.enabled && (vanillaDictionary.handleScreen(screen.getClass()) ||
+        return screen != null && Reference.getConfig().enabled && (vanillaDictionary.handleScreen(screen.getClass()) ||
                 isCustomMenu(screen));
     }
 
     private static boolean isCustomMenu(@Nonnull Screen screen) {
-        for (String s : config.modCompat.customScreens) {
+        for (String s : Reference.getConfig().modCompat.customScreens) {
             if(screen.getClass().getName().equals(s)) {
                 return true;
 

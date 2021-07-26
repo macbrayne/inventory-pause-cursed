@@ -2,9 +2,13 @@
 # and submitted pull request. This can help catch issues that only occur on
 # certain Java versions, and provides a first line of defence against bad commits.
 
-name: Build
+name: Java CI with Gradle
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ 1.12.2 ]
+  pull_request:
+    branches: [ 1.12.2 ]
 
 jobs:
   build:
@@ -12,8 +16,7 @@ jobs:
       matrix:
         java: [
             "8",  # Minecraft default
-            "11", # Current Java LTS
-            "16", # Latest version
+            "11" # Current Java LTS
           ]
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +27,7 @@ jobs:
           distribution: "adopt"
           java-version: ${{ matrix.java }}
 
-      - name: Grant execute permission
+      - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
       - name: Build with Gradle
         run: ./gradlew build

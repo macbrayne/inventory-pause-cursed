@@ -2,10 +2,7 @@
 .gradle
 build
 
-#Eclipse
-.settings
-.project
-.classpath
-*.launch
+#IntelliJ
+.idea
 bin
 run

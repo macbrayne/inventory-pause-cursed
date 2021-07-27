@@ -7,7 +7,8 @@
   ],
   "client": [
     "ContainerScreenMixin",
-    "MinecraftMixin"
+    "MinecraftMixin",
+    "GameRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

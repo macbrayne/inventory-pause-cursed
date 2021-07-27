@@ -28,6 +28,7 @@ public class VanillaScreenDictionary {
         configProviderMap.put(BeaconScreen.class, () -> Reference.getConfig().abilities.additionalGUIs.pauseBeacon);
         configProviderMap.put(Generic3x3ContainerScreen.class, () -> Reference.getConfig().abilities.additionalGUIs.pauseDispenser);
         configProviderMap.put(BrewingStandScreen.class, () -> Reference.getConfig().abilities.additionalGUIs.pauseBrewingStand);
+        configProviderMap.put(HopperScreen.class, () -> Reference.getConfig().abilities.additionalGUIs.pauseHopper);
 
         // World GUIs
         configProviderMap.put(HorseScreen.class, () -> Reference.getConfig().abilities.worldGUIs.pauseHorse);

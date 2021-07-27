@@ -32,6 +32,7 @@ public class ModConfig /*implements ConfigData*/ {
             public boolean pauseBeacon = false;
             public boolean pauseDispenser = false;
             public boolean pauseBrewingStand = false;
+            public boolean pauseHopper = false;
         }
 
         public static class WorldGUIs {

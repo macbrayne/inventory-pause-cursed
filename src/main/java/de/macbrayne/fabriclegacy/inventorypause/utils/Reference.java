@@ -3,7 +3,7 @@ package de.macbrayne.fabriclegacy.inventorypause.utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import de.macbrayne.fabriclegacy.inventorypause.common.ModConfig;
-import de.macbrayne.fabriclegacy.inventorypause.compat.VanillaScreenDictionary;
+import de.macbrayne.forge.inventorypause.compat.ScreenDictionary;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 
 public class Reference {
     private static ModConfig config = new ModConfig();
-    private static final VanillaScreenDictionary vanillaScreenDictionary = new VanillaScreenDictionary();
+    private static final ScreenDictionary SCREEN_DICTIONARY = new ScreenDictionary();
 
     static {
         Path configPath = Paths.get("config/inventorypause.json");
@@ -32,7 +32,7 @@ public class Reference {
         return config;
     }
 
-    public static VanillaScreenDictionary getVanillaScreenDictionary() {
-        return vanillaScreenDictionary;
+    public static ScreenDictionary getScreenDictionary() {
+        return SCREEN_DICTIONARY;
     }
 }

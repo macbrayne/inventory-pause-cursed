@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+import de.macbrayne.fabriclegacy.inventorypause.compat.VanillaCompat;
 import io.github.minecraftcursedlegacy.api.config.Configs;
 import io.github.minecraftcursedlegacy.api.registry.Id;
 import net.fabricmc.api.ModInitializer;
@@ -30,6 +31,8 @@ public class InventoryPause implements ModInitializer {
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
+
+		new VanillaCompat().register();
 	}
 
 	private static WritableConfig config;

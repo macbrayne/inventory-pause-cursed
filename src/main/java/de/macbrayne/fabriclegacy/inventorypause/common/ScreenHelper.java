@@ -3,8 +3,7 @@ package de.macbrayne.fabriclegacy.inventorypause.common;
 import de.macbrayne.fabriclegacy.inventorypause.utils.Reference;
 import de.macbrayne.forge.inventorypause.compat.ScreenDictionary;
 import net.minecraft.client.gui.Screen;
-
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 public class ScreenHelper {
     private static final ScreenDictionary SCREEN_DICTIONARY = Reference.getScreenDictionary();

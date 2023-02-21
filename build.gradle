@@ -61,7 +61,7 @@ dependencies {
 	}
 
 	// Compat Provider
-	implementation 'com.github.macbrayne.inventory-pause-forge:compat:v0.8'
+	implementation 'com.github.macbrayne.inventory-pause-forge:compat:1.2'
 
 	// Config File
 	implementation 'com.moandjiezana.toml:toml4j:0.7.2'
